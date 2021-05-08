@@ -47,7 +47,7 @@ passport.checkAuthentication = function(req,res,next){
 }
 
 passport.setAuthenticatedUser = function(req,res,next){
-    console.log(req.isAuthenticated());
+    
     if(req.isAuthenticated()){
         res.locals.user = req.user;
     }
@@ -56,8 +56,7 @@ passport.setAuthenticatedUser = function(req,res,next){
 }
 
 module.exports=passport;
-// after succesfully signing in, i am redirecting to profile.ejs
-//but its getting back to signin rateher than profile.ejs
+
 
 
 

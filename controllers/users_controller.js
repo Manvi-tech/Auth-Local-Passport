@@ -3,10 +3,9 @@ const User = require('../models/user');
 
 //when signin form is posted
 module.exports.signin= function(req,res){
-    console.log('dfbjd');// this is not getting printed got it lemme check
+    
     return res.render('profile');
 }
-
 
 //when signup form is posted
 module.exports.signup =async function(req,res){
